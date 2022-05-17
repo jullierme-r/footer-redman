@@ -8,6 +8,42 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="footer-info">
+                <ul>
+                    <a href="#">
+                        <li>Políticas de privacidade</li>
+                    </a>
+                    <a href="#">
+                        <li>Políticas de envio, prazos e entregas</li>
+                    </a>
+                    <a href="#">
+                        <li>Políticas de trocas e devoluções</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="envio">
+                <h3 class="footer-title">Formas de envio</h3>
+                <hr>
+            </div>
+            <div class="pagtos">
+                <h3 class="footer-title">Formas de pagamento</h3>
+                <hr>
+            </div>
+            <div class="compra-segura"></div>
+            <div class="footer-copy">
+                <p>RED STORE - CNPJ: 20.584.917/0001-98<br><small>&copy; Todos os direitos reservados. <span class="currentYear"></span></small></p>
+            </div>
+        </div>        
+    </footer>
+
+    <script>
+        let currentYear = new Date().getFullYear();
+        document.querySelector('.currentYear').innerHTML = currentYear;
+    </script>
 </body>
 </html>

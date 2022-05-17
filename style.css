@@ -3,3 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #e11937;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.logo {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+hr {
+    width: 300px;
+    margin-bottom: 20px;
+}
