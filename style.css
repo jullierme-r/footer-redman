@@ -126,5 +126,18 @@
         flex-direction: column;
         justify-content: center;
     }
+
+    .footer-info {
+        text-align: center;
+    }
     
+}
+
+@media screen and (max-width: 425px) {
+    .header-footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 }
