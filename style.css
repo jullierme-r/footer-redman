@@ -153,6 +153,11 @@
         gap: 10px;
     }
 
+    .footer-info li {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
     .representante {
         font-size: 1.3rem;
     }
@@ -174,11 +179,8 @@
     }
 
     .bandeiras {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        align-items: center;
-        justify-items: center;
-        width: 390px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .bg-black {
@@ -187,10 +189,6 @@
 }
 
 @media screen and (max-width: 395px) {
-    .footer-info li {
-        font-size: 1.3rem;
-    }
-
     .footer-title {
         font-size: 1.15rem;
     }
