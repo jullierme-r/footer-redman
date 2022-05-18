@@ -1,49 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <div class="logo"></div>
-            </div>
-            <div class="footer-info">
-                <ul>
-                    <a href="#">
-                        <li>Políticas de privacidade</li>
-                    </a>
-                    <a href="#">
-                        <li>Políticas de envio, prazos e entregas</li>
-                    </a>
-                    <a href="#">
-                        <li>Políticas de trocas e devoluções</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="envio">
-                <h3 class="footer-title">Formas de envio</h3>
-                <hr>
-            </div>
-            <div class="pagtos">
-                <h3 class="footer-title">Formas de pagamento</h3>
-                <hr>
-            </div>
-            <div class="compra-segura"></div>
-            <div class="footer-copy">
-                <p>RED STORE - CNPJ: 20.584.917/0001-98<br><small>&copy; Todos os direitos reservados. <span class="currentYear"></span></small></p>
-            </div>
-        </div>        
+      <div class="header-footer">
+        <div class="representante">ENCONTRE UM REPRESENTANTE</div>
+        <div class="contato">
+          <a href="https://www.instagram.com/redmanoficial/" target="_blank">Entre em contato <img src="images/Insta.png" alt=""/></a>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="logo">
+            <img src="images/Icon RM.png" alt="Logotipo Redman" />
+          </div>
+          <div class="footer-info">
+            <ul>
+              <a href="#">
+                <li>Políticas de privacidade</li>
+              </a>
+              <a href="#">
+                <li>Políticas de envio, prazos e entregas</li>
+              </a>
+              <a href="#">
+                <li>Políticas de trocas e devoluções</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="wrap">
+          <div class="envio">
+            <h3 class="footer-title">Formas de envio</h3>
+            <img src="images/Correios.png" alt="">
+          </div>
+          <div class="pagtos">
+            <h3 class="footer-title">Formas de pagamento</h3>
+            <ul class="bandeiras">
+                <li><img src="images/Visa.png" alt="bandeira cartão visa"></li>
+                <li><img src="images/Master Card.png" alt="bandeira cartão mastercard"></li>
+                <li><img src="images/Elo.png" alt="bandeira cartão elo"></li>
+                <li><img src="images/American-Express.png" alt="bandeira cartão american American-Express"></li>
+                <li><img src="images/Diners.png" alt="bandeira cartão diners"></li>
+                <li><img src="images/Boleto.png" alt="boleto bancário"></li>
+                <li><img src="images/Pix.png" alt="Pagamento Pix"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-black">
+          <p>COMPRA SEGURA </p>
+          <img src="images/Seguro.png" alt=""> <p>SITE PROTEGIDO</p>
+      </div>
     </footer>
+    <div class="footer-copy">
+      <p>
+        RED STORE - CNPJ: 20.584.917/0001-98
+        <small
+          >&copy; Todos os direitos reservados. <span class="currentYear"></span
+        ></small>
+      </p>
+    </div>
 
     <script>
-        let currentYear = new Date().getFullYear();
-        document.querySelector('.currentYear').innerHTML = currentYear;
+      let currentYear = new Date().getFullYear();
+      document.querySelector(".currentYear").innerHTML = currentYear;
     </script>
-</body>
+  </body>
 </html>
