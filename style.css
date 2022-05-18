@@ -14,11 +14,6 @@
     cursor: pointer;
 }
 
-.footer a:hover {
-    color: #000;
-    text-decoration: underline;
-}
-
 .footer {
     background-color: #e11937;
     color: #fff;
@@ -45,6 +40,12 @@
     padding: 0px 20px;
 }
 
+.representante:hover {
+    border: 4px solid #000;
+    color: #000;
+    text-decoration: none;
+}
+
 .contato a {
     font-size: 1.5rem;
     font-weight: 500;
@@ -58,6 +59,12 @@
     justify-content: space-around;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.footer-container a:hover, 
+.contato a:hover {
+    color: #000;
+    text-decoration: underline;
 }
 
 .footer-logo {
@@ -87,9 +94,14 @@
 }
 
 .bandeiras,
-.envio img {
+.envio-mobile,
+.envio-desk {
     border-top: 1px solid #fff;
     padding: 5px;
+}
+
+.envio-mobile {
+    display: none;
 }
 
 .bandeiras {
@@ -139,5 +151,87 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+    }
+
+    .representante {
+        font-size: 1.3rem;
+    }
+
+    .footer-title {
+        margin-top: 15px;
+    }
+
+    .envio-desk {
+        display: none;
+    }
+
+    .envio-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bandeiras {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        width: 390px;
+    }
+
+    .bg-black {
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .footer-info li {
+        font-size: 1.3rem;
+    }
+
+    .footer-title {
+        font-size: 1.15rem;
+    }
+
+    .bandeiras,
+    .envio-mobile {
+        width: 370px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .representante, .contato {
+        font-size: 1.2rem;
+    }
+
+    .envio-mobile img + img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer {
+        width: 340px;
+    }
+    .representante, .contato a {
+        font-size: 1.05rem;
+    }
+
+    .footer-info li {
+        font-size: 1.1rem;
+    }
+
+    .envio, .envio-mobile, .bandeiras {
+        width: 310px;
+    }
+
+    .envio-mobile img + img {
+        width: 300px;
+    }
+
+    .bandeiras{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
