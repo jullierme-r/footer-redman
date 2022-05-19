@@ -159,7 +159,6 @@
 
     .footer-info li {
         font-size: 1.3rem;
-        font-weight: bold;
     }
 
     .representante {
@@ -180,6 +179,10 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+    }
+
+    .envio-mobile img + img {
+        width: 330px;
     }
 
     .bandeiras {
