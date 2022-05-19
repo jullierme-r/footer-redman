@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap');
 
 .footer ul {
     list-style: none;
@@ -123,6 +119,11 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    padding: 10px;
+}
+
+.bg-black img {
+    height: 55px;
 }
 
 .footer-copy {
