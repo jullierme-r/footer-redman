@@ -51,7 +51,11 @@
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.contato i {
+    font-size: 1.8rem;
 }
 
 .footer-container {
@@ -76,7 +80,7 @@
 .footer-info li {
     margin-bottom: 16px;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 .wrap {
