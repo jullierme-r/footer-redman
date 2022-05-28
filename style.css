@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .footer ul {
     list-style: none;
 }
@@ -17,7 +23,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 400px;
 }
 
 .header-footer {
@@ -47,15 +52,24 @@
     font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
+}
+
+.contato a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
 }
 
 .contato i {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 
-.contato i:hover {
+.contato i:hover,
+.contato a:hover {
     color: #000;
+    text-decoration: none;
 }
 
 .footer-container {
@@ -95,11 +109,17 @@
     margin-bottom: 5px;
 }
 
-.bandeiras,
-.envio-mobile,
-.envio-desk {
-    border-top: 1px solid #fff;
-    padding: 5px;
+.envio,
+.pagtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    margin-bottom: 10px;
+    width: 460px;
 }
 
 .envio-mobile {
@@ -114,9 +134,8 @@
 }
 
 .bg-black {
-    width: 100%;
-    height: 100px;
     background-color: #000;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,6 +159,14 @@
         height: auto;
     }
 
+    .representante {
+        font-size: 1.35rem;
+    }
+
+    .contato {
+        gap: 30px;
+    }
+
     .footer-container,
     .footer-logo {
         flex-direction: column;
@@ -157,7 +184,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .footer-info li {
@@ -168,8 +195,16 @@
         font-size: 1.3rem;
     }
 
+    .contato {
+        gap: 50px;
+    }
+
     .footer-title {
         margin-top: 15px;
+    }
+
+    hr {
+        width: 350px;
     }
 
     .envio-desk {
@@ -205,17 +240,13 @@
 
     .bandeiras,
     .envio-mobile {
-        width: 370px;
+        width: 368px;
     }
 }
 
 @media screen and (max-width: 375px) {
     .representante, .contato {
         font-size: 1.2rem;
-    }
-
-    .envio-mobile img + img {
-        width: 360px;
     }
 }
 
@@ -231,15 +262,15 @@
         font-size: 1.1rem;
     }
 
+    hr {
+        width: 290px;
+    }
+
     .envio, .envio-mobile, .bandeiras {
         width: 310px;
     }
 
     .envio-mobile img + img {
         width: 300px;
-    }
-
-    .bandeiras{
-        grid-template-columns: repeat(3, 1fr);
     }
 }
