@@ -66,6 +66,10 @@
     font-size: 2.2rem;
 }
 
+.contato .fa-headset {
+    font-size: 2rem;
+}
+
 .contato i:hover,
 .contato a:hover {
     color: #000;
