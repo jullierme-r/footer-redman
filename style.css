@@ -192,11 +192,15 @@ hr {
         margin: 20px 0px;
     }
 
+    .footer-ul {
+        margin: 0px;
+    }
+
     .logo, 
     .footer-info {
         margin: 20px 0px;
     }
-
+    .footer-info li:not(.last-item)
     .footer-info li {
         font-size: 1.3rem;
     }
